@@ -31,7 +31,7 @@
 
 **Respostas 👇**
 
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
 ✔️ | `201` | Perfil cadastrado com sucesso.
 ❌ | `403` | Não foi possível cadastrar o perfil.
@@ -54,7 +54,7 @@
 
 **Respostas 👇**
 
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
 | ✔️ | `201` | Perfil cadastrado com sucesso.
 | ❌ | `403` | Não foi possível cadastrar o perfil.
@@ -73,7 +73,7 @@
 
 **Respostas 👇**
 
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
 | ✔️ | `200` | Login validado com sucesso.
 | ❌ | `403` | Não foi possivel validar o login.
@@ -92,7 +92,7 @@
 
 **Respostas 👇**
 
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
 | ✔️ | `200` | Login validado com sucesso.
 | ❌ | `403` | Não foi possivel validar o login.
@@ -114,7 +114,7 @@
 
 **Respostas 👇**
 
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
 | ✔️ | `200` | Cadastro feito com sucesso.
 | ❌ | `403` | Não foi realizar o cadastro.
@@ -137,7 +137,7 @@
 
 **Respostas 👇**
 
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
 | ✔️ | `200` | Cadastro feito com sucesso.
 | ❌ | `403` | Não foi realizar o cadastro.
@@ -153,7 +153,7 @@ http://localhost:8080/baymax/cliente/pesquisa/1
 
 **Respostas 👇**
 
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
 | ✔️ | `200` | Cliente com o id {id} encontrado.
 | ❌ | `404` | Cliente com o id {id} não foi encontrado.
@@ -169,7 +169,7 @@ http://localhost:8080/baymax/medico/pesquisa/1
 
 **Respostas 👇**
 
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
 | ✔️ | `200` | Medico com o id {id} encontrado.
 | ❌ | `404` | Medico com o id {id} não foi encontrado.
@@ -198,7 +198,7 @@ http://localhost:8080/baymax/medico/pesquisa/1
 
 **Respostas 👇**
 
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
 | ✔️ | `200` | Alteração feita com sucesso.
 | ❌ | `404` | Cliente com o id {id} não foi encontrado.

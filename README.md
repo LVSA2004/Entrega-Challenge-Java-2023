@@ -1,7 +1,7 @@
 <h1 align="center">Projeto Baymax</h1>
 
 <h1 align="center">Por motivos de segurança, a OpenAI destrói as chaves de API que são colocadas na internet e por isso nosso projeto não consta uma chave de API</h1>
-<h2> Vídeo da API funcionando: </h2>
+<h2> Vídeo da API funcionando:https://youtu.be/b7Yxvw2rgec </h2>
 
 <h2> API RESTful criada para gerar dietas e treinos usando o chatgpt e com capacidade de cadastro e login, tanto de usuários como médicos para a validação dos prompts gerados pelo chatGPT</h2>
 

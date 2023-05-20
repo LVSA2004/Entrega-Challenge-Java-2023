@@ -32,7 +32,7 @@
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
+|:------:|:------:|-----------|
 ✔️ | `201` | Perfil cadastrado com sucesso.
 ❌ | `403` | Não foi possível cadastrar o perfil.
 
@@ -55,9 +55,9 @@
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-✔️ | `201` | Perfil cadastrado com sucesso.
-❌ | `403` | Não foi possível cadastrar o perfil.
+|:------:|:------:|-----------|
+| ✔️ | `201` | Perfil cadastrado com sucesso.
+| ❌ | `403` | Não foi possível cadastrar o perfil.
 
 ### Login com validação de Token ╹Cliente╷ **`/cliente/login`**:
 
@@ -74,9 +74,9 @@
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-✔️ | `200` | Login validado com sucesso.
-❌ | `403` | Não foi possivel validar o login.
+|:------:|:------:|-----------|
+| ✔️ | `200` | Login validado com sucesso.
+| ❌ | `403` | Não foi possivel validar o login.
 
 ### Login com validação de Token ╹Médico╷ **`/medico/login`**:
 
@@ -93,9 +93,9 @@
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-✔️ | `200` | Login validado com sucesso.
-❌ | `403` | Não foi possivel validar o login.
+|:------:|:------:|-----------|
+| ✔️ | `200` | Login validado com sucesso.
+| ❌ | `403` | Não foi possivel validar o login.
 
 ### Cadastro ╹Cliente╷ **`/baymax/cliente`**:
 
@@ -115,9 +115,9 @@
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-✔️ | `200` | Cadastro feito com sucesso.
-❌ | `403` | Não foi realizar o cadastro.
+|:------:|:------:|-----------|
+| ✔️ | `200` | Cadastro feito com sucesso.
+| ❌ | `403` | Não foi realizar o cadastro.
 
 ### Cadastro ╹Médico╷ **`/baymax/medico`**:
 
@@ -138,9 +138,9 @@
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-✔️ | `200` | Cadastro feito com sucesso.
-❌ | `403` | Não foi realizar o cadastro.
+|:------:|:------:|-----------|
+| ✔️ | `200` | Cadastro feito com sucesso.
+| ❌ | `403` | Não foi realizar o cadastro.
 
 ### Pesquisa Por ID ╹Cliente╷ **`/baymax/cliente/pesquisa/{id}`**:
 
@@ -154,9 +154,9 @@ http://localhost:8080/baymax/cliente/pesquisa/1
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-✔️ | `200` | Cliente com o id {id} encontrado.
-❌ | `404` | Cliente com o id {id} não foi encontrado.
+|:------:|:------:|-----------|
+| ✔️ | `200` | Cliente com o id {id} encontrado.
+| ❌ | `404` | Cliente com o id {id} não foi encontrado.
 
 ### Pesquisa por ID ╹Médico╷ **`/baymax/medico/pesquisa/{id}`**:
 
@@ -170,9 +170,9 @@ http://localhost:8080/baymax/medico/pesquisa/1
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-✔️ | `200` | Medico com o id {id} encontrado.
-❌ | `404` | Medico com o id {id} não foi encontrado.
+|:------:|:------:|-----------|
+| ✔️ | `200` | Medico com o id {id} encontrado.
+| ❌ | `404` | Medico com o id {id} não foi encontrado.
 
 ### Atualização de Cadastro ╹Cliente╷ **`/baymax/cliente/{id}`**:
 
@@ -199,9 +199,9 @@ http://localhost:8080/baymax/medico/pesquisa/1
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-✔️ | `200` | Alteração feita com sucesso.
-❌ | `404` | Cliente com o id {id} não foi encontrado.
+|:------:|:------:|-----------|
+| ✔️ | `200` | Alteração feita com sucesso.
+| ❌ | `404` | Cliente com o id {id} não foi encontrado.
 
 ### Atualização de Cadastro ╹Médico╷ **`/baymax/medico/{id}`**:
 
@@ -230,8 +230,8 @@ http://localhost:8080/baymax/medico/pesquisa/1
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-✔️ | `200` | Alteração feita com sucesso.
-❌ | `404` | Medico com o id {id} não foi encontrado.
+|:------:|:------:|-----------|
+| ✔️ | `200` | Alteração feita com sucesso.
+| ❌ | `404` | Medico com o id {id} não foi encontrado.
 
 

@@ -1,7 +1,7 @@
 # Entrega-Challenge-Java-2023
 API RESTful criada para gerar deitas e treinos usando o chatgpt e com capacidade de cadastro e login, tanto de usuários como médicos para a validação dos prompts gerados pelo chatGPT
 
-### Cadastro **`/cliente/registrar`**:
+### Cadastro com Autenticação e Token **`/cliente/registrar`**:
 
 #### POST
 
@@ -11,12 +11,12 @@ API RESTful criada para gerar deitas e treinos usando o chatgpt e com capacidade
 	"nome": "Luan Sá",
 	"email": "lvssfiap@gmail.com",
 	"senha": "|(:oUuC<UZ",
-	"cpf":"515.730.748-96",
+	"cpf":"535.710.748-96",
 	"telefone":"(11) 95954-0882"
 }
 ```
 
-### Cadastro **`/medico/registrar`**:
+### Cadastro com Autenticação e Token **`/medico/registrar`**:
 
 #### POST
 
@@ -39,7 +39,7 @@ API RESTful criada para gerar deitas e treinos usando o chatgpt e com capacidade
 | `201` | Perfil cadastrado com sucesso.
 | `403` | Não foi possível cadastrar o perfil.
 
-### Login **`/cliente/login`**:
+### Login com validação de Token **`/cliente/login`**:
 
 #### POST
 
@@ -51,7 +51,7 @@ API RESTful criada para gerar deitas e treinos usando o chatgpt e com capacidade
 }
 ```
 
-### Login **`/medico/login`**:
+### Login com validação de Token **`/medico/login`**:
 
 #### POST
 
@@ -70,22 +70,18 @@ API RESTful criada para gerar deitas e treinos usando o chatgpt e com capacidade
 | `200` | Login validado com sucesso.
 | `403` | Não foi possivel validar o login.
 
-#### GET `{id_produto}`
+### Cadastro **`/baymax/cliente`**:
 
-**Retorna 👇**
+#### POST
+
+**Exemplo 👇**
 ```js
 {
-    "id": 1,
-    "nome": "Camiseta do Baby Yoda",
-    "preco": 70.00,
-    "descricao": "Camiseta com uma estampa do personagem Baby Yoda",
-    "categorias": [
-        {
-            "id": 1,
-            "nome": "Roupas",
-            "descricao": "Roupas de todos os estilos e modelos"
-        }
-    ]
+	"nome": "André Santi",
+	"email": "santificado@gmail.com",
+	"senha": "()faG(Ix40",
+	"cpf":"168.384.445-93",
+	"telefone":"(19) 92483-9220"
 }
 ```
 
@@ -93,24 +89,22 @@ API RESTful criada para gerar deitas e treinos usando o chatgpt e com capacidade
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|-----------|
-| `200` | Dados do produto foram retornados com sucesso.
-| `404` | Não há produto cadastrado com esse identificador até o momento.
+| `200` | Cadastro feito com sucesso.
+| `403` | Não foi realizar o cadastro.
 
-#### POST 
+### Cadastro **`/baymax/medico`**:
 
-**Requer 👇**
+#### POST
+
+**Exemplo 👇**
 ```js
 {
-    "nome": "Camiseta do Mandalorian",
-    "preco": 80.00,
-    "descricao": "Camiseta com uma estampa do personagem Mandalorian",
-    "categorias": [
-        {
-            "id": 1,
-            "nome": "Roupas",
-            "descricao": "Roupas de todos os estilos e modelos"
-        }
-    ]
+	"nome": "Fernando de Sá",
+	"email": "fds@gmail.com",
+	"senha": "JsXCaDule6",
+	"crm": "027730-6",
+	"afiliacao": "Associação Paulista de Medicina",
+	"telefone": "(16) 93735-5312"
 }
 ```
 
@@ -118,390 +112,39 @@ API RESTful criada para gerar deitas e treinos usando o chatgpt e com capacidade
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|-----------|
-| `201` | Dados do produto foram cadastrados com sucesso.
-| `400` | Houve uma falha no cadastro dos dados.
+| `200` | Cadastro feito com sucesso.
+| `403` | Não foi realizar o cadastro.
 
-#### PUT `{id_produto}`
-
-**Requer 👇**
- ```js
-{
-    "nome": "Camiseta do Jar Jar Binks",
-    "preco": 50.00,
-    "descricao": "Camiseta com uma estampa do personagem Jar Jar Binks",
-    "categorias": [
-        {
-            "id": 1,
-            "nome": "Roupas",
-            "descricao": "Roupas de todos os estilos e modelos"
-        }
-    ]
-}
-```
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `200` | Dados do produto foram atualizados com sucesso.
-| `400` | Houve uma falha na atualização dos dados.
-
-#### DELETE `{id_produto}`
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `204` | Dados do produto foram deletados com sucesso.
-| `404` | Não há um produto com esse identificador até o momento.
-
-<hr>
-
-### Categoria **`/station/categoria`**:
+### Pesquisa Geral **`/baymax/cliente/pesquisa/{id}`**:
 
 #### GET
 
-**Retorna 👇**
+**Exemplo 👇**
 ```js
-{
-    "id": 1,
-    "nome": "Roupas",
-    "descricao": "Roupas de todos os estilos e modelos"
-}
+http://localhost:8080/baymax/cliente/pesquisa/1
 ```
 
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|-----------|
-| `200` | Dados da categoria foram retornados com sucesso.
-| `404` | Não há categorias cadastradas até o momento.
+| `200` | Cliente com o id {id} encontrado.
+| `404` | Cliente com o id {id} não foi encontrado.
 
-#### GET `{id_categoria}`
-
-**Retorna 👇**
-```js
-{
-    "id": 1,
-    "nome": "Roupas",
-    "descricao": "Roupas de todos os estilos e modelos"
-}
-```
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `200` | Dados da categoria foram retornados com sucesso.
-| `404` | Não há categoria cadastrada com esse identificador até o momento.
-
-#### POST 
-
-**Requer 👇**
-```js
-{
-    "nome": "Periféricos",
-    "descricao": "Periféricos em geral"
-}
-```
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `201` | Dados da categoria foram cadastrados com sucesso.
-| `400` | Houve uma falha no cadastro dos dados.
-
-#### PUT `{id_categoria}`
-
-**Requer 👇**
- ```js
-{
-    "nome": "Periféricos",
-    "descricao": "Periféricos em geral de todas as marcas"
-}
-```
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `200` | Dados da categoria foram atualizados com sucesso.
-| `400` | Houve uma falha na atualização dos dados.
-
-#### DELETE `{id_categoria}`
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `204` | Dados da categoria foram deletados com sucesso.
-| `404` | Não há um produto com esse identificador até o momento.
-
-<hr>
-
-### Usuário **`/station/usuario`**: 
+### Pesquisa por ID **`/baymax/medico/pesquisa/{id}`**:
 
 #### GET
 
-**Retorna 👇**
+**Exemplo 👇**
 ```js
-{
-    "id": 1,
-    "email": "pedro@email.com"
-    "nome": "Pedro Borges",
-    "cpf": "111.222.333-10",
-    "senha": "senha123",
-    "tel": "(11) 99999-9999"
-}
+http://localhost:8080/baymax/medico/pesquisa/1
 ```
 
 **Respostas 👇**
 
 | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|-----------|
-| `200` | Dados do usuário foram retornados com sucesso.
-| `404` | Não há usuários cadastrados até o momento.
+| `200` | Medico com o id {id} encontrado.
+| `404` | Medico com o id {id} não foi encontrado.
 
-#### GET `{id_usuario}`
 
-**Retorna 👇**
-```js
-{
-    "id": 1,
-    "email": "pedro@email.com"
-    "nome": "Pedro Borges",
-    "cpf": "111.222.333-10",
-    "senha": "senha123",
-    "tel": "(11) 99999-9999"
-}
-```
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `200` | Dados do usuário foram retornados com sucesso.
-| `404` | Não há usuário cadastrado com esse identificador até o momento.
-
-#### POST 
-
-**Requer 👇**
-```js
-{
-    "email": "pedro@email.com"
-    "nome": "Pedro Borges",
-    "cpf": "111.222.333-10",
-    "senha": "senha123",
-    "tel": "(11) 99999-9999"
-}
-```
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `201` | Dados do usuário foram cadastrados com sucesso.
-| `400` | Houve uma falha no cadastro dos dados.
-
-#### PUT `{id_usuario}`
-
-**Requer 👇**
- ```js
-{
-    "email": "pedro@email.com"
-    "nome": "Pedro Bó",
-    "cpf": "111.222.333-10",
-    "senha": "senha123",
-    "tel": "(11) 99999-9999"
-}
-```
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `200` | Dados do usuário foram atualizados com sucesso.
-| `400` | Houve uma falha na atualização dos dados.
-
-#### DELETE `{id_usuario}`
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `204` | Dados do usuário foram deletados com sucesso.
-| `404` | Não há um usuário com esse identificador até o momento.
-
-<hr>
-
-### Pedido **`/station/pedido`**:
-
-#### GET
-
-**Retorna 👇**
-```js
-{
-    "id": 1,
-    "dt_pedido": "2023-04-05",
-    "forma_entrega": "SEDEX",
-    "produtos": [
-        {
-            "id": 1,
-            "nome": "Camiseta do Baby Yoda",
-            "preco": 70.00,
-            "descricao": "Camiseta com uma estampa do personagem Baby Yoda",
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Roupas",
-                    "descricao": "Roupas de todos os estilos e modelos"
-                }
-            ]
-        }
-    ],
-    "usuario": {
-        "id": 1,
-        "email": "gabriel@email.com"
-        "nome": "Gabriel Dias",
-        "cpf": "123.456.789-10",
-        "senha": "senha123",
-        "tel": "(11) 99999-9999"
-    }
-}
-```
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `200` | Dados do pedido foram retornados com sucesso.
-| `404` | Não há pedidos cadastrados até o momento.
-
-#### GET `{id_pedido}`
-
-**Retorna 👇**
-```js
-{
-    "id": 1,
-    "dt_pedido": "2023-04-05",
-    "forma_entrega": "SEDEX",
-    "produtos": [
-        {
-            "id": 1,
-            "nome": "Camiseta do Baby Yoda",
-            "preco": 70.00,
-            "descricao": "Camiseta com uma estampa do personagem Baby Yoda",
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Roupas",
-                    "descricao": "Roupas de todos os estilos e modelos"
-                }
-            ]
-        }
-    ],
-    "usuario": {
-        "id": 1,
-        "email": "gabriel@email.com"
-        "nome": "Gabriel Dias",
-        "cpf": "123.456.789-10",
-        "senha": "senha123",
-        "tel": "(11) 99999-9999"
-    }
-}
-```
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `200` | Dados do pedido foram retornados com sucesso.
-| `404` | Não há pedido cadastrado com esse identificador até o momento.
-
-#### POST 
-
-**Requer 👇**
-```js
-{
-    "dt_pedido": "2023-04-05",
-    "forma_entrega": "FedEx",
-    "produtos": [
-        {
-            "id": 1,
-            "nome": "Camiseta do Baby Yoda",
-            "preco": 70.00,
-            "descricao": "Camiseta com uma estampa do personagem Baby Yoda",
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Roupas",
-                    "descricao": "Roupas de todos os estilos e modelos"
-                }
-            ]
-        }
-    ],
-    "usuario": {
-        "id": 1,
-        "email": "gabriel@email.com"
-        "nome": "Gabriel Dias",
-        "cpf": "123.456.789-10",
-        "senha": "senha123",
-        "tel": "(11) 99999-9999"
-    }
-}
-```
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `201` | Dados do pedido foram cadastrados com sucesso.
-| `400` | Houve uma falha no cadastro dos dados.
-
-#### PUT `{id_pedido}`
-
-**Requer 👇**
- ```js
-{
-    "dt_pedido": "2023-04-05",
-    "forma_entrega": "Serviço Aéreo Doméstico da FedEx",
-    "produtos": [
-        {
-            "id": 1,
-            "nome": "Camiseta do Baby Yoda",
-            "preco": 70.00,
-            "descricao": "Camiseta com uma estampa do personagem Baby Yoda",
-            "categorias": [
-                {
-                    "id": 1,
-                    "nome": "Roupas",
-                    "descricao": "Roupas de todos os estilos e modelos"
-                }
-            ]
-        }
-    ],
-    "usuario": {
-        "id": 1,
-        "email": "gabriel@email.com"
-        "nome": "Gabriel Dias",
-        "cpf": "123.456.789-10",
-        "senha": "senha123",
-        "tel": "(11) 99999-9999"
-    }
-}
-```
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|
-| `200` | Dados do pedido foram atualizados com sucesso.
-| `400` | Houve uma falha na atualização dos dados.
-
-#### DELETE `{id_pedido}`
-
-**Respostas 👇**
-
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
-|:------:|-----------|

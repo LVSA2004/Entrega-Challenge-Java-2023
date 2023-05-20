@@ -2,16 +2,16 @@
 
 <h2> API RESTful criada para gerar deitas e treinos usando o chatgpt e com capacidade de cadastro e login, tanto de usuários como médicos para a validação dos prompts gerados pelo chatGPT</h2>
 
-<h2 align="center">🔧 Arquitetura do Projeto 🔨</h2>
+<h2 align="center">🛠 Arquitetura do Projeto 🧾</h2>
 <div align="center">
     <img height src="https://cdn.discordapp.com/attachments/946468431794954250/1109516890503651378/Mapa_Mental_com_brainstorm_escrito_a_mao_colorido.png"/>
 </div>
 
-<h2 align="center">Endpoints 📖</h2>
+<h2 align="center">Endpoints 📋</h2>
 
 ### Cadastro com Autenticação e Token **`/cliente/registrar`**:
 
-#### POST
+#### POST 📬
 
 **Exemplo 👇**
 ```js
@@ -26,7 +26,7 @@
 
 ### Cadastro com Autenticação e Token **`/medico/registrar`**:
 
-#### POST
+#### POST 📬
 
 **Exemplo 👇**
 ```js
@@ -49,7 +49,7 @@
 
 ### Login com validação de Token **`/cliente/login`**:
 
-#### POST
+#### POST 📬
 
 **Exemplo 👇**
 ```js
@@ -61,7 +61,7 @@
 
 ### Login com validação de Token **`/medico/login`**:
 
-#### POST
+#### POST 📬
 
 **Exemplo 👇**
 ```js
@@ -80,7 +80,7 @@
 
 ### Cadastro **`/baymax/cliente`**:
 
-#### POST
+#### POST 📬
 
 **Exemplo 👇**
 ```js
@@ -102,7 +102,7 @@
 
 ### Cadastro **`/baymax/medico`**:
 
-#### POST
+#### POST 📬
 
 **Exemplo 👇**
 ```js
@@ -125,7 +125,7 @@
 
 ### Pesquisa Geral **`/baymax/cliente/pesquisa/{id}`**:
 
-#### GET
+#### GET 📪
 
 **Exemplo 👇**
 ```js
@@ -141,7 +141,7 @@ http://localhost:8080/baymax/cliente/pesquisa/1
 
 ### Pesquisa por ID **`/baymax/medico/pesquisa/{id}`**:
 
-#### GET
+#### GET 📪
 
 **Exemplo 👇**
 ```js

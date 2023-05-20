@@ -1,6 +1,6 @@
 <h1 align="center">Projeto Baymax</h1>
 
-<h2> API RESTful criada para gerar deitas e treinos usando o chatgpt e com capacidade de cadastro e login, tanto de usuários como médicos para a validação dos prompts gerados pelo chatGPT</h2>
+<h2> API RESTful criada para gerar dietas e treinos usando o chatgpt e com capacidade de cadastro e login, tanto de usuários como médicos para a validação dos prompts gerados pelo chatGPT</h2>
 
 <h2 align="center">🛠 Arquitetura do Projeto 🛠</h2>
 <div align="center">
@@ -14,7 +14,7 @@
 
 <h2 align="center">Endpoints 📋</h2>
 
-### Cadastro com Autenticação e Token **`/cliente/registrar`**:
+### Cadastro com Autenticação e Token - Cliente**`/cliente/registrar`**:
 
 #### POST 📬
 
@@ -29,7 +29,14 @@
 }
 ```
 
-### Cadastro com Autenticação e Token **`/medico/registrar`**:
+**Respostas 👇**
+
+| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|:------:|-----------|
+| `201` | Perfil cadastrado com sucesso.
+| `403` | Não foi possível cadastrar o perfil.
+
+### Cadastro com Autenticação e Token - Médico**`/medico/registrar`**:
 
 #### POST 📬
 
@@ -52,7 +59,7 @@
 | `201` | Perfil cadastrado com sucesso.
 | `403` | Não foi possível cadastrar o perfil.
 
-### Login com validação de Token **`/cliente/login`**:
+### Login com validação de Token - Cliente **`/cliente/login`**:
 
 #### POST 📬
 
@@ -64,7 +71,14 @@
 }
 ```
 
-### Login com validação de Token **`/medico/login`**:
+**Respostas 👇**
+
+| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|:------:|-----------|
+| `200` | Login validado com sucesso.
+| `403` | Não foi possivel validar o login.
+
+### Login com validação de Token - Médico **`/medico/login`**:
 
 #### POST 📬
 
@@ -83,7 +97,7 @@
 | `200` | Login validado com sucesso.
 | `403` | Não foi possivel validar o login.
 
-### Cadastro **`/baymax/cliente`**:
+### Cadastro Cliente **`/baymax/cliente`**:
 
 #### POST 📬
 
@@ -105,7 +119,7 @@
 | `200` | Cadastro feito com sucesso.
 | `403` | Não foi realizar o cadastro.
 
-### Cadastro **`/baymax/medico`**:
+### Cadastro Médico **`/baymax/medico`**:
 
 #### POST 📬
 
@@ -128,7 +142,7 @@
 | `200` | Cadastro feito com sucesso.
 | `403` | Não foi realizar o cadastro.
 
-### Pesquisa Geral **`/baymax/cliente/pesquisa/{id}`**:
+### Pesquisa Por ID Cliente **`/baymax/cliente/pesquisa/{id}`**:
 
 #### GET 📪
 
@@ -144,7 +158,7 @@ http://localhost:8080/baymax/cliente/pesquisa/1
 | `200` | Cliente com o id {id} encontrado.
 | `404` | Cliente com o id {id} não foi encontrado.
 
-### Pesquisa por ID **`/baymax/medico/pesquisa/{id}`**:
+### Pesquisa por ID Médico**`/baymax/medico/pesquisa/{id}`**:
 
 #### GET 📪
 

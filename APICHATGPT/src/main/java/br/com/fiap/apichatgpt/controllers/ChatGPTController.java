@@ -32,7 +32,7 @@ public class ChatGPTController {
     PagedResourcesAssembler<ChatGPT> assembler;
 
     Logger log = LoggerFactory.getLogger(ChatGPTController.class);
-    private static final String API_KEY = "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";
+    private static final String API_KEY = "chave da API";
 
     @GetMapping
     public PagedModel<EntityModel<ChatGPT>> index(@PageableDefault(size = 5) Pageable pageable) {

@@ -234,4 +234,71 @@ http://localhost:8080/baymax/medico/pesquisa/1
 | ✔️ | `200` | Alteração feita com sucesso.
 | ❌ | `404` | Medico com o id {id} não foi encontrado.
 
+### Deletar Cadastro ╹Cliente╷ **`/baymax/cliente/{id}`**:
+
+#### DELETE ⬇️
+
+**Exemplo 👇**
+```js
+http://localhost:8080/baymax/cliente/pesquisa/1
+```
+
+**Saída 👇**
+
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|:------:|:------:|-----------|
+| ✔️ | `204` | Cliente deletado com sucesso.
+| ❌ | `404` | Cliente com o id {id} não foi encontrado.
+
+### Deletar Cadastro ╹Médico╷ **`/baymax/medico/{id}`**:
+
+#### DELETE ⬇️
+
+**Exemplo 👇**
+```js
+http://localhost:8080/baymax/medico/pesquisa/1
+```
+
+**Saída 👇**
+
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|:------:|:------:|-----------|
+| ✔️ | `204` | Medico deletado com sucesso.
+| ❌ | `404` | Medico com o id {id} não foi encontrado.
+
+### Mandar prompt para o ChatGPT ╹ChatGPT╷ **`/baymax/chatbot/api`**:
+
+#### POST ➡️
+
+**Exemplo 👇**
+```js
+{
+	"pergunta": "Gere uma dieta para um Homem de 19 anos, 1.75cm de altura, 85 kg, que não prática nenhuma atividade física",
+	"resposta": ""
+}
+```
+
+**Saída 👇**
+
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|:------:|:------:|-----------|
+✔️ | `201` | Prompt inserido com sucesso.
+❌ | `403` | Não foi possívelinserir o prompt.
+
+### Deletar Prompt ╹ChatGPT╷ **`/baymax/chatbot/{id}`**:
+
+#### DELETE ⬇️
+
+**Exemplo 👇**
+```js
+http://localhost:8080/baymax/chatbot/1
+```
+
+**Saída 👇**
+
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|:------:|:------:|-----------|
+| ✔️ | `204` | Prompt deletado com sucesso.
+| ❌ | `404` | Medico com o id {id} não foi encontrado.
+
 

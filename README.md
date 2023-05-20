@@ -1,5 +1,13 @@
-# Entrega-Challenge-Java-2023
-API RESTful criada para gerar deitas e treinos usando o chatgpt e com capacidade de cadastro e login, tanto de usuários como médicos para a validação dos prompts gerados pelo chatGPT
+<h1 align="center">Projeto Baymax</h1>
+
+<h2> API RESTful criada para gerar deitas e treinos usando o chatgpt e com capacidade de cadastro e login, tanto de usuários como médicos para a validação dos prompts gerados pelo chatGPT</h2>
+
+<h2 align="center">🔧 Arquitetura do Projeto 🔨</h2>
+<div align="center">
+    <img height src="https://cdn.discordapp.com/attachments/946468431794954250/1109516890503651378/Mapa_Mental_com_brainstorm_escrito_a_mao_colorido.png"/>
+</div>
+
+<h2 align="center">Endpoints 📖</h2>
 
 ### Cadastro com Autenticação e Token **`/cliente/registrar`**:
 

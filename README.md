@@ -29,7 +29,7 @@
 }
 ```
 
-**Respostas 👇**
+**Saída 👇**
 
 |  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
@@ -52,7 +52,7 @@
 }
 ```
 
-**Respostas 👇**
+**Saída 👇**
 
 |  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
@@ -71,7 +71,7 @@
 }
 ```
 
-**Respostas 👇**
+**Saída 👇**
 
 |  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
@@ -90,7 +90,7 @@
 }
 ```
 
-**Respostas 👇**
+**Saída 👇**
 
 |  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
@@ -112,7 +112,7 @@
 }
 ```
 
-**Respostas 👇**
+**Saída 👇**
 
 |  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
@@ -135,7 +135,7 @@
 }
 ```
 
-**Respostas 👇**
+**Saída 👇**
 
 |  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
@@ -151,7 +151,7 @@
 http://localhost:8080/baymax/cliente/pesquisa/1
 ```
 
-**Respostas 👇**
+**Saída 👇**
 
 |  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
@@ -167,7 +167,7 @@ http://localhost:8080/baymax/cliente/pesquisa/1
 http://localhost:8080/baymax/medico/pesquisa/1
 ```
 
-**Respostas 👇**
+**Saída 👇**
 
 |  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
@@ -196,7 +196,7 @@ http://localhost:8080/baymax/medico/pesquisa/1
 	"telefone":"(11) 95954-0882"
 ```
 
-**Respostas 👇**
+**Saída 👇**
 
 |  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
@@ -227,9 +227,9 @@ http://localhost:8080/baymax/medico/pesquisa/1
 	"telefone": "(13) 93189-40862"
 ```
 
-**Respostas 👇**
+**Saída 👇**
 
-| <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
+|  | <font color="#aa31f5">código</font> | <font color="#e0af0d">descrição</font> |
 |:------:|:------:|-----------|
 | ✔️ | `200` | Alteração feita com sucesso.
 | ❌ | `404` | Medico com o id {id} não foi encontrado.

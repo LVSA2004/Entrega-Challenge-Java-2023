@@ -10,7 +10,7 @@
     <img height src="https://cdn.discordapp.com/attachments/946468431794954250/1109516890503651378/Mapa_Mental_com_brainstorm_escrito_a_mao_colorido.png"/>
 </div>
 
-<h2 align="center">🛠 Futura Implementação da Nuvem🛠</h2>
+<h2 align="center">🔜 Futura Implementação da Nuvem 🔜</h2>
 <div align="center">
     <img height src="https://cdn.discordapp.com/attachments/946468431794954250/1109862708133777469/Mapa_Mental_com_brainstorm_escrito_a_mao_colorido_1.png"/>
 </div>
